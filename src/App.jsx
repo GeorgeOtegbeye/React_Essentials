@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import CoreConcepts from "./components/CoreConcepts";
+import { CORE_CONCEPTS } from "./components/data";
 
 function App() {
   return (
@@ -9,10 +10,14 @@ function App() {
         <section id="core-concepts">
           <h2>Core Concepts</h2>
           <ul>
-            <CoreConcepts />
-            <CoreConcepts />
-            <CoreConcepts />
-            <CoreConcepts />
+            {CORE_CONCEPTS.map((concept) => (
+              <CoreConcepts
+                key={concept.title}
+                image={concept.image}
+                title={concept.title}
+                description={concept.description}
+              />
+            ))}
           </ul>
         </section>
       </main>
