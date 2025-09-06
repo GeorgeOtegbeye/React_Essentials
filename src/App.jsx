@@ -1,6 +1,6 @@
 import Header from "./components/Header";
 import CoreConcepts from "./components/CoreConcepts";
-import { CORE_CONCEPTS } from "./components/data";
+import { CORE_CONCEPTS } from "./components/Data";
 
 function App() {
   return (

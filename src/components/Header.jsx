@@ -5,7 +5,7 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * (max + 1));
 }
 
-function Header() {
+export default function Header() {
   const description = recatDespcription[getRandomInt(2)];
   return (
     <header>
@@ -18,4 +18,4 @@ function Header() {
     </header>
   );
 }
-export default Header;
+// export default Header;
